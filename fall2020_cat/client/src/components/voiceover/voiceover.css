@@ -1,0 +1,28 @@
+
+
+
+h1 {
+    color: orange;
+}
+
+img {
+    width: 100%;
+}
+
+
+.buttonDiv {
+    display: block !important;
+    margin: 30px;
+}
+
+.nextButton {
+    float: right;
+}
+
+
+.centerContainer  {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+

@@ -1,0 +1,81 @@
+
+
+h1 {
+    color: orange;
+}
+
+img {
+    width: 100%;
+}
+
+ul li{
+    text-decoration: none;
+}
+
+
+
+
+.assessment-grid-layout {
+    margin: 30px
+}
+
+.questionNumber {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    color: black;
+    display: flex;
+
+}
+
+.question {
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.answers {
+    display:block;
+    align-items: left;
+    padding: 20px;
+
+}
+
+.answers ul{
+    list-style-type: none;
+}
+
+.inputQuiz {
+    width: 10% !important;
+    height: 30px !important;
+    padding: 5px;
+    margin: 15px !important;
+}
+
+.checkanswer button{
+    margin-left: 400px !important;
+}
+
+.checkanswer button:disabled {
+    background-color: #fc6633;
+}
+
+.finshedContainer{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.centerContainer  {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+

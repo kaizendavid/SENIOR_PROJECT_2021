@@ -1,0 +1,96 @@
+.outer-container{
+    background-color: #efefef;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 80%;
+
+    max-width: 1024px;
+    padding: 35px;
+    border-radius: 5px;
+}
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 35px 35px 25px;
+}
+
+
+.training-video-grid-layout h2, h3 {
+    color: black;
+}
+
+.training-video-grid-layout  * {
+    font-size: 16px;
+}
+
+.training-video-grid-layout h2 {
+    font-size: 20px;
+}
+
+.training-video-grid-layout h3 {
+    font-size: 18px;
+}
+
+.secondary-info {
+    margin-top: -10px;
+    padding-left: 55px;
+    height: 50px;
+}
+
+.video-text-gap{
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.instructor-group > span > img {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.instructor-group > video-text-gap.instructor-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.video-text-gap.instructor-text {
+    font-size: 14px;
+}
+
+.innerHalf.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.buy-container {
+    display: flex;
+    margin-right: 8px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.buy-container > button {
+    width:100px;
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
+.buy-container > span {
+    margin: auto 20px auto auto;
+    font-size: 25px;
+    font-weight: bold;
+}

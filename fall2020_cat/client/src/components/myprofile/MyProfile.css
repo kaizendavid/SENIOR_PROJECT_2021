@@ -1,0 +1,74 @@
+
+
+
+
+.profileTable {
+    background-color: lightblue;
+    width: 450px;
+}
+
+tr {
+    height: 70px;
+}
+
+ 
+input {
+    width: 80% !important;
+    height: 3rem !important;
+    font-size: 25px;
+}
+
+.profileSelect {
+    width: 80% !important;
+    height: 3rem !important;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.spanLabel {
+    background-color: #105e7a;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+
+} 
+
+.personalInfo {
+    color: #0075ff;
+    width: 40%;
+
+
+}
+
+.accountInfo {
+    color: #0075ff;
+    background-color: lightblue;
+    width: 40%;
+    float: right;
+
+}
+
+
+.headerStyle {
+    background-color: #105e7a;
+    color: white;
+    width: 100%;
+}
+
+
+
+.centerProfileContainer  {
+    width: 850px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: block !important;
+
+    padding-top: 30px;
+
+}
+
+
+.buttonOrange {
+    background-color: #fc6633 !important;
+}

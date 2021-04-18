@@ -1,0 +1,86 @@
+
+/*
+.presentor-container{
+    grid-row: 2 / 3;
+}
+*/
+
+
+/**
+UserDashNav.js CSS ===========================================
+*/
+
+.usernavbar{
+    height: 70px;
+    grid-area: usernav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color:  #fc6633 !important;
+
+
+}
+
+.navbar_icon{
+    display: none;
+}
+.navbar_icon > i {
+    font-size: 3rem;
+    color:darkgoldenrod;
+}
+
+.navbar__left > a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+.navbar_left .active_link {
+    color: white;
+    border-bottom: 3px solid darkblue;
+    padding-bottom: 12px;
+}
+
+.navbar__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__right > a {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 978px) {
+    .navbar_icon {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar_left {
+        display: none;
+    }
+}
+
+.centerButtonContainer {
+    height: 200px;
+    position: relative;
+}
+
+.centerStartButton {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+

@@ -1,0 +1,306 @@
+:root {
+  --primary-color: #fc6633;
+  --dark-color: #105e7a;
+  --light-color: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI';
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* GENERAL LAYOUT FOR WEBSITE 
+  profile bar
+  -----------
+  nav bar
+  -----------
+  content
+  -----------
+*/
+.main-grid-layout {
+  display: grid;
+  grid-template-rows: 70px 70px auto;
+  height: 100vh;
+}
+
+.main-grid-layout div[class*="grid-layout"] {
+  grid-row: 3;
+  overflow: auto;
+}
+
+/* PROFILE BAR */
+.profile-bar {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  top: 0px;
+  position: fixed;
+  z-index: 1;
+}
+
+
+/* rules for ul elements within profile-bar */
+.profile-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+.profile-menu {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: var(--light-color);
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 3;
+}
+.profile-menu>ul>li>a {
+  color: black;
+}
+
+
+
+/* rules for anchor elements within profile-bar */
+.profile-bar a {
+  color: white;
+  padding: .45rem;
+  margin: 0 .25rem;
+  text-decoration: none;
+  opacity: 90%;
+  font-size: larger;
+}
+
+/*change color for hover over elements*/
+.profile-bar a:hover {
+  color: rgb(127, 178, 245);
+}
+
+/*  NAVBAR  */
+.navbar {
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  height: 70px;
+  background: var(--dark-color);
+  color: white;
+  position: fixed;
+  top: 70px;
+  z-index: 1;
+}
+
+/* rules for ul elements within navbar */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* rules for anchor elements within navbar */
+.navbar a {
+  color: white;
+  padding: .45rem;
+  margin: 0 .25rem;
+  text-decoration: none;
+  opacity: 90%;
+  font-size: larger;
+}
+
+/* change color on hover over anchor elements within navbar */
+.navbar a:hover {
+  color: rgb(127, 178, 245);
+}
+
+/* HOME PAGE LAYOUT */
+.landing-grid-layout {
+  display: grid;
+  grid-row: 3 / 4;
+  grid-template-rows: 800px 600px 250px;
+}
+/* HOME PAGE LAYOUT */
+.landing-grid-layout {
+  display: grid;
+  grid-template-rows: auto auto 300px;
+}
+
+/* LANDING CONTENT*/
+.landing {
+  grid-row: 1 / 2;
+  background-color: white;
+  text-align: center;
+}
+
+
+/* SAMPLE/AD CONTENT PANES */
+.sample-pane {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  background-color: white;
+  display: grid;
+  margin: 50px 0px 50px 0px;
+}
+
+/* FOOTER/CONTACT US */
+footer {
+  grid-row: 3 / 4;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 50px;
+}
+
+/* assign these rules to all children of footer element */
+footer > * {
+  opacity: 0.9;
+}
+
+
+/*  BUTTON  */
+.btn {
+  display: inline-block;
+  background: var(--dark-color);
+  color: white;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  text-decoration: none;
+  opacity: .82;
+  border-radius: 2.5px;
+}
+
+
+/* TEXT */
+.large {
+  color: #20374e;
+  font-size: x-large;
+  align-self: center;
+}
+
+.smaller-text {
+  color: #20374e;
+  font-size: smaller;
+}
+
+p {
+  color: #20374e;
+  font-size: smaller;
+}
+
+label {
+  color: #20374e;
+  font-size: xx-small;
+  text-align: left;
+}
+
+h3 {
+  color:#20374e;
+  text-align: left;
+  margin-top: 3px;
+}
+
+/*  FORMS  */
+.form {
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 55px 55px 70px 55px;
+    font-weight: bolder;
+    font-size: normal;  
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form input[type='number'],
+.form input[type='tel'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'],
+
+button {
+  font: inherit;
+  background-color: var(--dark-color);
+  color: white;
+  font-weight: bolder;
+  border: thin;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 35px;
+}
+
+input {
+    width: 75%;
+    height: 35px;
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: bolder;
+    border: thin;
+    margin-top: 15px;
+    width: 45%;
+    border-radius: 35px;
+}
+
+/*  LOGIN  */
+.button-holder {
+    text-align: center;
+}
+
+
+label {
+    display:block;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+.squareLogout {
+  font: inherit;
+  background-color: var(--dark-color);
+  color: white;
+  font-weight: bolder;
+  border: thin;
+  margin-top: 15px;
+  margin: 30px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 0px;
+}
+

@@ -1,0 +1,134 @@
+
+
+
+.cardContainer {
+
+    margin: 20px;
+    background-color: white;
+    width: 300px;
+    height: 430px;
+    border-radius: 5px;
+    border: 3px solid lightgrey;
+    box-shadow: 0px 0px 15px -5px grey;
+    transition: 0.3s;
+    animation: ease-in-out;
+
+}
+
+.cardContainer:hover {
+    transform: scale(1.1);
+
+}
+
+
+.cardTitle {
+    height: 120px;
+    padding: 1rem;
+    text-align: center;
+    color:#20374e;
+    border-bottom: 1px solid #20374e;
+}
+
+.cardDescription {
+    height: 100px;
+    padding: 0.5rem;
+    color: darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+.completedBox {
+    color: #20374e;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #20374e;
+    width: 90%;
+    padding: 5px;
+    margin: 20px;
+}
+.bgLightskyblue {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #20374e;
+    padding: 5px;
+    margin: 20px;
+}
+
+
+.progressBox {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+}
+
+progress {
+    border-radius: 10px;
+    width: 90%;
+    height: 30px;
+}
+
+
+
+.card-btn {
+    background-color: white !important;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-btn button {
+    background: white;
+    border: none;
+    margin: 0px;
+    
+}
+
+.card-btn button a {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#20374e;
+}
+
+.btn button a:hover {
+    color: #fc6633;
+}
+
+
+/**completeBox styles
+*/
+.bgGreen {
+    background-color: rgb(111, 221, 111);
+    color: #20374e;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #20374e;
+    padding: 5px;
+    margin: 20px;
+}
+.bgYellow{
+    background-color: rgb(220, 209, 0);
+    color: #20374e;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #20374e;
+    padding: 5px;
+    margin: 20px;
+}
+.bgRed {
+    background-color: rgb(220, 94, 94);
+    color: #20374e;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #20374e;
+    padding: 5px;
+    margin: 20px;
+}
+
+

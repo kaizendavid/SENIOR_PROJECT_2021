@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "604875b54c6af8646cceebab"
+  },
+  "organizationName": "single",
+  "accountType": "self",
+  "billingAmount": 150,
+  "licenseIdNumber": "wysfrmic",
+  "licenseTotal": 1,
+  "licenseUsed": 1,
+  "createdAt": {
+    "$date": "2021-03-10T07:31:01.315Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T07:31:01.315Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604879c74c6af8646cceebad"
+  },
+  "organizationName": "Virgin Galactic",
+  "accountType": "business",
+  "billingAmount": 450,
+  "licenseIdNumber": "7t3s8j8u",
+  "licenseTotal": 3,
+  "licenseUsed": 2,
+  "createdAt": {
+    "$date": "2021-03-10T07:48:23.679Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T16:28:09.612Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60487baa4c6af8646cceebaf"
+  },
+  "organizationName": "single",
+  "accountType": "self",
+  "billingAmount": 150,
+  "licenseIdNumber": "ybsqhzdj",
+  "licenseTotal": 1,
+  "licenseUsed": 1,
+  "createdAt": {
+    "$date": "2021-03-10T07:56:27.001Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T07:56:27.001Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60487eac4c6af8646cceebb1"
+  },
+  "organizationName": "In-and-Out",
+  "accountType": "nonProfit",
+  "billingAmount": 1050,
+  "licenseIdNumber": "aeb75b1m",
+  "licenseTotal": 7,
+  "licenseUsed": 1,
+  "createdAt": {
+    "$date": "2021-03-10T08:09:16.233Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T08:09:16.233Z"
+  },
+  "__v": 0
+}]

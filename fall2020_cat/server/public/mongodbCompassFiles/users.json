@@ -1,0 +1,247 @@
+[{
+  "_id": {
+    "$oid": "604875b54c6af8646cceebac"
+  },
+  "role": "admin",
+  "lastLesson": {
+    "module": 2,
+    "lessonId": 4
+  },
+  "modulesCompleted": [
+    {
+      "module": 1,
+      "lessonIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "moduleFinish": true
+    },
+    {
+      "module": 2,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ],
+      "moduleFinish": false
+    }
+  ],
+  "username": "eccentric",
+  "email": "eggbenedict@yahoo.com",
+  "password": "$2a$10$u9NmyG1Jtb0SWH.aNH9Pl.eUg16vd4kdsYguHfNqKAQbxFVsbFUGG",
+  "accountType": "self",
+  "licensetotal": 1,
+  "firstName": "Elon",
+  "middleName": "Reeve",
+  "lastName": "Musk",
+  "address": "3500 Deer Creek Rd",
+  "city": "Palo Alto",
+  "states": "CA",
+  "zipcode": "94304",
+  "month": "6",
+  "day": "28",
+  "year": "1971",
+  "gender": "male",
+  "phone": "6506815000",
+  "creditcard": "1234567812345678",
+  "licenseIdNumber": "wysfrmic",
+  "createdAt": {
+    "$date": "2021-03-10T07:31:01.321Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T07:31:01.321Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604879c74c6af8646cceebae"
+  },
+  "role": "admin",
+  "lastLesson": {
+    "module": 2,
+    "lessonId": 0
+  },
+  "modulesCompleted": [
+    {
+      "module": 1,
+      "lessonIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "moduleFinish": true
+    },
+    {
+      "module": 2,
+      "lessonIds": [
+        0
+      ],
+      "moduleFinish": false
+    }
+  ],
+  "username": "rich",
+  "email": "roastbeef@yahoo.com",
+  "password": "$2a$10$hBJPwNv3Io1eAkDqeZA4huaEte/RuowK8bnkEuzs7vWuQSouNgaW.",
+  "accountType": "business",
+  "licensetotal": 3,
+  "firstName": "Richard",
+  "middleName": "Charles",
+  "lastName": "Branson",
+  "address": "42 Hamersley st",
+  "city": "Djugun",
+  "states": "CA",
+  "zipcode": "95321",
+  "month": "7",
+  "day": "18",
+  "year": "1950",
+  "gender": "male",
+  "phone": "1978543256",
+  "creditcard": "1234576598765098",
+  "licenseIdNumber": "7t3s8j8u",
+  "createdAt": {
+    "$date": "2021-03-10T07:48:23.681Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T07:48:23.681Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60487bab4c6af8646cceebb0"
+  },
+  "role": "user",
+  "lastLesson": {
+    "module": 1,
+    "lessonId": 1
+  },
+  "modulesCompleted": [
+    {
+      "module": 1,
+      "lessonIds": [
+        0
+      ],
+      "moduleFinish": false
+    }
+  ],
+  "username": "arnie",
+  "email": "astropops@gmail.com",
+  "password": "$2a$10$Zzr9Qnwjjcwg5P1uFkAs.eb58N.IWUTro8s7MMXvyZwUFOMiGXJlu",
+  "accountType": "self",
+  "licensetotal": 1,
+  "firstName": "Arnold",
+  "middleName": "Alois",
+  "lastName": "Schwartznegger",
+  "address": "3110  main st",
+  "city": "Santa Monica",
+  "states": "CA",
+  "zipcode": "90405",
+  "month": "7",
+  "day": "30",
+  "year": "1947",
+  "gender": "male",
+  "phone": "3103965717",
+  "creditcard": "1234576598765098",
+  "licenseIdNumber": "ybsqhzdj",
+  "createdAt": {
+    "$date": "2021-03-10T07:56:27.004Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T07:56:27.004Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60487eac4c6af8646cceebb2"
+  },
+  "role": "admin",
+  "lastLesson": {
+    "module": 1,
+    "lessonId": 1
+  },
+  "modulesCompleted": [
+    {
+      "module": 1,
+      "lessonIds": [
+        0
+      ],
+      "moduleFinish": false
+    }
+  ],
+  "username": "lynseed",
+  "email": "lasagna@gmail.com",
+  "password": "$2a$10$k85gVDsNjzLL.dGqSEb41eLQPwyewv8vO3oaiBH/UfBOiFZccAaLa",
+  "accountType": "nonProfit",
+  "licensetotal": 7,
+  "firstName": "Lynsi",
+  "middleName": "lavelle",
+  "lastName": "Snyder",
+  "address": "123 cheesy way",
+  "city": "Bradbury ",
+  "states": "CA",
+  "zipcode": "95832",
+  "month": "5",
+  "day": "5",
+  "year": "1982",
+  "gender": "female",
+  "phone": "7242468190",
+  "creditcard": "1234567812344444",
+  "licenseIdNumber": "aeb75b1m",
+  "createdAt": {
+    "$date": "2021-03-10T08:09:16.235Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T08:09:16.235Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6048f399bbde0876fc7853f3"
+  },
+  "role": "user",
+  "lastLesson": {
+    "module": 1,
+    "lessonId": 1
+  },
+  "modulesCompleted": [
+    {
+      "module": 1,
+      "lessonIds": [
+        0,
+        1,
+        2
+      ],
+      "moduleFinish": false
+    }
+  ],
+  "username": "jumper",
+  "email": "jujubeans@gmail.com",
+  "password": "$2a$10$GzlFIdUxt.yr5Re8QxDHv.T/oF2AkpFfK1EFP2PbLZizwtvMtSl72",
+  "accountType": "self",
+  "licensetotal": 1,
+  "firstName": "Jeff",
+  "middleName": "Preston",
+  "lastName": "Bezos",
+  "address": "1200 12th ave",
+  "city": "Seattle",
+  "states": "WA",
+  "zipcode": "98144",
+  "month": "1",
+  "day": "12",
+  "year": "1964",
+  "gender": "male",
+  "phone": "2062661000",
+  "creditcard": "",
+  "licenseIdNumber": "7t3s8j8u",
+  "createdAt": {
+    "$date": "2021-03-10T16:28:09.896Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T16:28:09.896Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,500 @@
+[{
+  "_id": {
+    "$oid": "6054492967508931f40d91bb"
+  },
+  "module": 1,
+  "lessonType": "voice over",
+  "description": "voice over with images for introduction",
+  "lessonId": 1,
+  "author": "Lindsey Lindon",
+  "stepPosition": 1,
+  "lessontitle": "Introduction",
+  "lessonSubtitle": "Assessment and CARE Team Process",
+  "names": "slide 3",
+  "lessonText": "Assesment and CARE team",
+  "subtext1": "Comprised of teachers, faculty, and staff from various disciplines",
+  "subtext2": "Receives reports of threatening or violent behavior",
+  "subtext3": "Assesses the facts and evidence of reported behavior",
+  "subtext4": "Provides support and resources to reduce the risk of future targeted violence",
+  "backgroundImage": "resources/backgrounds/background_introduction.png",
+  "images": [
+    {
+      "position": 1,
+      "image": "/resources/images/careTeam.png"
+    }
+  ],
+  "audios": [
+    {
+      "position": 1,
+      "audio": "/resources/audio/introduction1.mp3"
+    },
+    {
+      "position": 2,
+      "audio": "/resources/audio/introduction2.mp3"
+    }
+  ],
+  "videos": [],
+  "slides": [],
+  "quizs": [],
+  "notes": "This is the first test"
+},{
+  "_id": {
+    "$oid": "6054493d67508931f40d91bc"
+  },
+  "module": 1,
+  "lessonType": "text",
+  "description": "voice over with images for introduction",
+  "lessonId": 2,
+  "author": "Lindsey Lindon",
+  "stepPosition": 2,
+  "lessontitle": "Module Overview",
+  "lessonSubtitle": "Assessment and CARE Team Process",
+  "names": "slide 4",
+  "lessonText": "The remainder of this training module proceeds in four parts. First, you will learn about the Safe School Initiative, a study whose findings led to the development of the Assessment and Care Team Process. This training module draws heavily on the study’s findings and recommendations, taking directly from their published guidelines. Second, you will learn how to implement an Assessment and Care Team Process. It is critical to understand the principles, scope, and procedures that are the foundation of the Assessment and Care Team Process. Third, you will learn about the paramount preventative measure to targeted violence:  creating a safe school climate. You will learn steps you can take to increase trust and safety at school. Finally, the module concludes with a synthesis of all you learned. While you proceed through the training module, you will encounter quizzes that permit you to check your learning and reflect on module content. ",
+  "subtext1": "Safe School Initiative",
+  "subtext2": "Implementing an Assessment and Care Team Process",
+  "subtext3": "Creating a Safe School Climate",
+  "subtext4": "Conclusion",
+  "backgroundImage": "/resources/backgrounds/background_school.png",
+  "images": [],
+  "audios": [],
+  "videos": [],
+  "slides": [],
+  "quizs": [],
+  "notes": "text for module 1"
+},{
+  "_id": {
+    "$oid": "6054494e67508931f40d91bd"
+  },
+  "module": 1,
+  "lessonType": "video",
+  "description": "video for teaching lessons",
+  "lessonId": 3,
+  "author": "Lindsey Lindon",
+  "stepPosition": 3,
+  "lessontitle": "Safe School Initiative",
+  "lessonSubtitle": "Finding from past research and reports",
+  "names": "slide 5",
+  "lessonText": "Safe School Initiative. The following section covers the Safe School Initiative study. It begins with background information, moves on to the study’s findings, and then discusses the implications of the findings.",
+  "subtext1": "",
+  "subtext2": "",
+  "subtext3": "",
+  "subtext4": "",
+  "backgroundImage": "/resources/backgrounds/background_safe.png",
+  "images": [],
+  "audios": [],
+  "videos": [
+    {
+      "position": 1,
+      "video": "/resources/video/module1_SafeSchoolInitiative.mp4"
+    }
+  ],
+  "slides": [],
+  "quizs": [],
+  "notess": "first video to explain the safe school initiateve"
+},{
+  "_id": {
+    "$oid": "6054496167508931f40d91be"
+  },
+  "module": 1,
+  "lessonType": "slides",
+  "description": "3 slides to show information",
+  "lessonId": 4,
+  "author": "Lindsey Lindon",
+  "stepPosition": 4,
+  "lessontitle": "Background",
+  "lessonSubtitle": "Finding from past research and reports",
+  "names": "slide 6",
+  "lessonText": "The Safe School Initiative was implemented by the U.S. Secret Service’s National Threat Assessment Center and the Department of Education’s Safe and Drug Free School Initiative. The study looked at the thinking, planning, and other pre-attack behaviors of students who carried out school shootings between December 1974 and May 2000. Interestingly, the Safe School Initiative was modeled after the Secret Service’s earlier study on the thinking and behaviors of individuals who carried out or attempted lethal attacks on public officials or prominent individuals in the United States since 1949. This earlier study was called the Exceptional Case Study Project. ",
+  "subtext1": "U.S. Secret Service and U.S. Department of Education",
+  "subtext2": "37 incidents of targeted school violence ",
+  "subtext3": "Incidents occurred between 1974-2000",
+  "subtext4": "Modeled after Exceptional Case Study Project (ECSP)",
+  "backgroundImage": "",
+  "images": [],
+  "audios": [],
+  "videos": [],
+  "slides": [
+    {
+      "position": 1,
+      "image": "/resources/slides/module1_1.png"
+    },
+    {
+      "position": 2,
+      "image": "/resources/slides/module1_2.png"
+    },
+    {
+      "position": 3,
+      "image": "/resources/slides/module1_3.png"
+    }
+  ],
+  "quizs": [],
+  "notes": "slides that are the most relevant for the lesson"
+},{
+  "_id": {
+    "$oid": "6054497467508931f40d91bf"
+  },
+  "module": 1,
+  "lessonType": "assessment",
+  "description": "Quiz for module 1",
+  "lessonId": 5,
+  "author": "Lindsey Lindon",
+  "stepPosition": 5,
+  "lessontitle": "Quiz 1",
+  "lessonSubtitle": "Module Review",
+  "names": "Quiz 1",
+  "lessonText": "This is the assessment test for module 1. There are three multiple choice quizes to pass",
+  "subtext1": "",
+  "subtext2": "",
+  "subtext3": "",
+  "subtext4": "",
+  "backgroundImage": "",
+  "images": [],
+  "audios": [],
+  "videos": [],
+  "slides": [],
+  "quizs": [
+    {
+      "number": "1",
+      "question": "Which of the following is not true about the Safe School Initiative?",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) The U.S. Secret Service and Department of Education conducted study."
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) The study evaluated 37 incidents of targeted school violence between 1974 to 2000."
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": "(c) The study developed a 'profile' of someone who commits targeted violence."
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": "(d) The study's findings are the foundation of the Assessment and CARE team process."
+        }
+      ],
+      "answer": {
+        "cid": 3,
+        "values": "c",
+        "choice": "(c) The study developed a 'profile' of someone who commits targeted violence."
+      },
+      "explanation": "While most attackers are men, there is no accurate or usefule 'profile' of students who engage in targeted school violence."
+    },
+    {
+      "number": "2",
+      "question": "Which accurately describes a key finding from the Safe Schools Initiative Study?",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) Most attackers had never used a weapon before the attack."
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) Most attackers had used a weapon once prior to the attack."
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": "(c) Most attackers had access to and had used weapons prior to the attack."
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": "(d) None of the above."
+        }
+      ],
+      "answer": {
+        "cid": 3,
+        "values": "c",
+        "choice": "(c) Most attackers had access to and had used weapons prior to the attack."
+      },
+      "explanation": "In most cases, the attackers had access to and had used weapons prior to the attack; most attackers acquired the weapon from home or a relative’s home."
+    },
+    {
+      "number": "3",
+      "question": "Which of the following describes an implication of the Safe Schools Initiative study?",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) School administrators need not inquire quickly to concerns about targeted violence."
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) The school community is irrelevant for promoting safety and wellbeing."
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": "(c) There is no way to help prevent acts of targeted violence."
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": "(d) None of the above."
+        }
+      ],
+      "answer": {
+        "cid": 4,
+        "values": "d",
+        "choice": "(d) None of the above."
+      },
+      "explanation": "Five implications are: \n 1) School administers should inquire quickly when there is concern \n 2) The school community plays an important role in targeted violence prevention \n 3) Focus on behaviors and communications, not 'profiles' \n 4) Prevent bullying and empathize with struggling students \n 5) Consider access to weapons"
+    }
+  ],
+  "notes": "This is the first test"
+},{
+  "_id": {
+    "$oid": "6054498967508931f40d91c0"
+  },
+  "module": 2,
+  "lessonType": "voice over",
+  "description": "voice over with for assessment process",
+  "lessonId": 1,
+  "author": "Lindsey Lindon",
+  "stepPosition": 1,
+  "lessontitle": "Implementing an Assessment and CARE team process",
+  "lessonSubtitle": "Establish the Team",
+  "names": "slide 17",
+  "lessonText": "Assesment and CARE team",
+  "subtext1": "Scope",
+  "subtext2": "Membership",
+  "subtext3": "Membership Roles",
+  "subtext4": "Member Qualifications",
+  "backgroundImage": "/resources/backgrounds/background_team.png",
+  "images": [],
+  "audios": [
+    {
+      "position": 1,
+      "audio": "/resources/audio/assessmentCare.mp3"
+    }
+  ],
+  "videos": [],
+  "slides": [],
+  "quizs": [],
+  "notes": "first lesson for module 2"
+},{
+  "_id": {
+    "$oid": "605449a067508931f40d91c1"
+  },
+  "module": 2,
+  "lessonType": "text",
+  "description": "six principles to follow",
+  "lessonId": 2,
+  "author": "Lindsey Lindon",
+  "stepPosition": 2,
+  "lessontitle": "6 principles",
+  "lessonSubtitle": "Assessment and CARE Team Process",
+  "names": "slide 18",
+  "lessonText": "Parents and educators are united in ensuring that children remain healthy during this pandemic. The Office for Targeted Violence and Terrorism Prevention (OTVTP) helps everyone remain safe by working with local communities to develop local prevention frameworks. These frameworks build protective factors that dissuade individuals from radicalizing to violence and address risk factors that may make an individual more susceptible to radicalizing to violence. One of those risk factors is social isolation. Social isolation (whether voluntary or not, short-term or long-term) may impact a child’s mental health. These mental health issues may result in a decline of social cohesion and social capital which may increase an individual’s willingness to accept messages of radicalization to violence.",
+  "subtext1": "Principle 1: Targeted violence is the end result...",
+  "subtext2": "Principle 2: Targeted violences stems from....",
+  "subtext3": "Principle 4: Inquiries into concerning individuals..",
+  "subtext4": "Principle 5: Many different members of the school..",
+  "backgroundImage": "/resources/backgrounds/background_pillars.png",
+  "images": [],
+  "audios": [],
+  "videos": [],
+  "slides": [],
+  "quizs": [],
+  "notes": "text for module 2"
+},{
+  "_id": {
+    "$oid": "605449b267508931f40d91c2"
+  },
+  "module": 2,
+  "lessonType": "video",
+  "description": "video for teaching principles",
+  "lessonId": 3,
+  "author": "Lindsey Lindon",
+  "stepPosition": 3,
+  "lessontitle": "Targeted Violence",
+  "lessonSubtitle": "Targeted violence in schools and workplace",
+  "names": "slide 5",
+  "lessonText": "Acts of school and workplace violence, including both active shooter incidents and violent protests, threaten life safety and security, undermine public confidence, and emotionally devastate affected communities. IHEs should use these resources to build campus resilience by adequately preparing for and responding to violent incidents.",
+  "subtext1": "",
+  "subtext2": "",
+  "subtext3": "",
+  "subtext4": "",
+  "backgroundImage": "",
+  "images": [],
+  "audios": [],
+  "videos": [
+    {
+      "position": 1,
+      "video": "/resources/video/targetedviolence.mp4"
+    }
+  ],
+  "slides": [],
+  "quizs": [],
+  "notes": "targeted violence video to show principles"
+},{
+  "_id": {
+    "$oid": "605449c467508931f40d91c3"
+  },
+  "module": 2,
+  "lessonType": "slides",
+  "description": "3 slides to show information",
+  "lessonId": 4,
+  "author": "Lindsey Lindon",
+  "stepPosition": 4,
+  "lessontitle": "statistics",
+  "lessonSubtitle": "Finding from past research and reports",
+  "names": "slide 6",
+  "lessonText": "Familiar with childhood and adolescent development",
+  "subtext1": "Various personnel from the School community",
+  "subtext2": "Diverse roles and perspectives",
+  "subtext3": "teachers, guidance counselors, school administrators",
+  "subtext4": "School and District level",
+  "backgroundImage": "",
+  "images": [
+    {
+      "position": 1,
+      "image": "/resources/slides/module2_1.png"
+    },
+    {
+      "position": 2,
+      "image": "/resources/slides/module2_2.png"
+    },
+    {
+      "position": 3,
+      "image": "/resources/slides/module2_3.png"
+    }
+  ],
+  "audios": [],
+  "videos": [],
+  "slides": [],
+  "quizs": [],
+  "notes": "slides that are the most relevant for the lesson"
+},{
+  "_id": {
+    "$oid": "605449d567508931f40d91c4"
+  },
+  "module": 2,
+  "lessonType": "assessment",
+  "description": "Quiz for module 2",
+  "lessonId": 5,
+  "author": "Lindsey Lindon",
+  "stepPosition": 5,
+  "lessontitle": "Quiz 2",
+  "lessonSubtitle": "Module Review",
+  "names": "Quiz 2",
+  "lessonText": "This is the assessment test for module 2. There are three multiple choice quizes to pass",
+  "subtext1": "",
+  "subtext2": "",
+  "subtext3": "",
+  "subtext4": "",
+  "backgroundImage": "",
+  "images": [],
+  "audios": [],
+  "videos": [],
+  "slides": [],
+  "quizs": [
+    {
+      "number": "1",
+      "question": "What is the role of an Assessment and Care Team?",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) Receives reports about concerning individuals and/or situations."
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) Gathers information about concerning individuals and/or situations to assess risk."
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": "(c) Develops and implements intervention strategies to mitigate the posed risk. "
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": "(d) All of the above."
+        }
+      ],
+      "answer": {
+        "cid": 4,
+        "values": "d",
+        "choice": "(d) All of the above."
+      },
+      "explanation": "The Team’s role is to receive reports about violent or threatening behaviors or situations. The Team should gather additional information about the circumstances to assess the risk of targeted violence that it poses. After, Team develops and implements intervention strategies to mitigate any risk posed."
+    },
+    {
+      "number": "2",
+      "question": "An Assessment and Care Team can exist for a school or an entire school district.",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) True"
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) False"
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": ""
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": ""
+        }
+      ],
+      "answer": {
+        "cid": 1,
+        "values": "a",
+        "choice": "(a) True"
+      },
+      "explanation": "An Assessment and Care Team can exist for a school or an entire school district."
+    },
+    {
+      "number": "3",
+      "question": "What is the role of the Leader on an Assessment and Care Team?",
+      "choices": [
+        {
+          "cid": 1,
+          "values": "a",
+          "choice": "(a) Creates the Team."
+        },
+        {
+          "cid": 2,
+          "values": "b",
+          "choice": "(b) Receives written reports from the Team about their inquiries."
+        },
+        {
+          "cid": 3,
+          "values": "c",
+          "choice": "(c) Coordinates the Team tasks and leads inquiries."
+        },
+        {
+          "cid": 4,
+          "values": "d",
+          "choice": "(d) Presents inquiry findings to school community members."
+        }
+      ],
+      "answer": {
+        "cid": 3,
+        "values": "c",
+        "choice": "(c) Coordinates the Team tasks and leads inquiries."
+      },
+      "explanation": "The Leader coordinates the Team’s tasks and leads all assessment and care inquiries."
+    }
+  ],
+  "notes": "This is the first test"
+}]

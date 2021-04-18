@@ -1,0 +1,119 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 768px;
+    margin: 20px auto 30px;
+}
+
+.flex-row {
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom:35px;
+    display: flex;
+}
+
+.thumbnail {
+    border-radius: 30px;
+    margin: auto 0;
+}
+
+.thumbnail > img {
+    vertical-align: middle;
+}
+
+.inner-row-white {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+}
+
+.inner-row-container {
+    padding: 20px;
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-row-container.left {
+    padding-left: 35px;
+}
+
+.inner-row-container.right {
+    padding-right: 30px;
+}
+
+.inner-details {
+    margin-left: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.training-videos-grid-layout h2, h3 {
+    color: black;
+}
+
+.training-videos-grid-layout  * {
+    font-size: 16px;
+}
+
+.training-videos-grid-layout h2 {
+    font-size: 20px;
+}
+
+.training-videos-grid-layout h3 {
+    font-size: 18px;
+}
+
+.inner-details > h2 {
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.instructor {
+    display: flex;
+
+}
+
+.instructor > span {
+    font-size: 14px;
+}
+
+.instructor .instructor-avatar {
+    border-radius: 20px;
+}
+
+.overview {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
+
+.details .details-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    margin-top: auto;
+
+}
+
+.details-footer > span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.details-footer span:last-child {
+    margin-right: 10px;
+    float: right;
+}

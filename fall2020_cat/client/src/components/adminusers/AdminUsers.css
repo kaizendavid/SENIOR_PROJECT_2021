@@ -1,0 +1,33 @@
+
+
+
+
+.backColorOrange{
+    background: #fc6633 !important;
+}
+
+
+.buttonLogin {
+    background-color: #fc6633 !important;
+}
+
+/*This is used to display the organizations Name and Licesnses Total and Used*/
+.topTitleContainer {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px 0px 0px 0px;
+    
+}
+
+
+.centerAdminContainer  {
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}

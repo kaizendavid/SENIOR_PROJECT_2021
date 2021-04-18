@@ -1,0 +1,46 @@
+
+
+.contactContainer{
+   
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr ;
+    grid-template-rows: 140px auto;
+    grid-template-areas: 
+        
+        "usernav    usernav     usernav "
+        "lside       dashmain    rside" ;
+
+
+}
+
+.contactForm{
+    background-color: white;
+    grid-area: dashmain;
+}
+
+.backColorOrange{
+    background: #fc6633 !important;
+}
+
+
+
+.leftSide {
+    grid-area: lside;
+    background-color: #fc6633;
+}
+
+.rightSide {
+    grid-area: rside;
+    background-color: #fc6633;
+}
+
+.contactFormInput {
+    border: 1px solid black!important;
+
+
+}
+
+.contactusTextarea {
+    width: 80% !important;
+    margin: 0 auto;
+}

@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "60486d8cad57ca6504bb1698"
+  },
+  "module": 1,
+  "moduleId": 1,
+  "title": "Assessment and CARE team process",
+  "description": "Creating the CARE team and learning the process. Learning about the Safe School Initiative and its origins",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lessonOrder": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+},{
+  "_id": {
+    "$oid": "60486d9dad57ca6504bb1699"
+  },
+  "module": 2,
+  "moduleId": 2,
+  "title": "Implementing an Assessment and CARE team process",
+  "description": "Establishing a team with Scope, membership, member roles, and member qualification",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "lessonOrder": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+},{
+  "_id": {
+    "$oid": "60486da9ad57ca6504bb169a"
+  },
+  "module": 3,
+  "moduleId": 3,
+  "title": "Establish the Inquiry",
+  "description": "Determine whether to inquire, Gather Facts, Evalueate Context, Assess indiviuals",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [],
+  "lessonOrder": []
+},{
+  "_id": {
+    "$oid": "60486dbdad57ca6504bb169b"
+  },
+  "module": 4,
+  "moduleId": 4,
+  "title": "Establish the Response",
+  "description": "Individualized Management Plan and Notifications",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [],
+  "lessonOrder": []
+},{
+  "_id": {
+    "$oid": "60486dcdad57ca6504bb169c"
+  },
+  "module": 5,
+  "moduleId": 5,
+  "title": "Train Community Members",
+  "description": "Who to train, How to train, What to report, and How to report",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [],
+  "lessonOrder": []
+},{
+  "_id": {
+    "$oid": "60486ddbad57ca6504bb169d"
+  },
+  "module": 6,
+  "moduleId": 6,
+  "title": "Creating a Safe School Climate",
+  "description": "Assess school emotional climate, take a strong caring stand against code of silence, Involve the community",
+  "author": {
+    "first": "lindsey",
+    "last": "Lindon"
+  },
+  "lessonIds": [],
+  "lessonOrder": []
+}]

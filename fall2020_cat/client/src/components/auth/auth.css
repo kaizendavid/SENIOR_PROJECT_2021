@@ -1,0 +1,132 @@
+/*This is the cascading style sheets for all the auth components*/
+
+
+label{
+    margin: 5px;
+    padding: 10px;
+}
+
+label h1 {
+    color: black;
+    text-align: center;
+}
+
+label h2 {
+    color: black;
+    text-align: center;
+}
+
+
+form input {
+    width: 80% !important;
+    height: 3rem !important;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+form  select {
+    font-size: 1.5rem;
+    width: 80% !important;
+    height: 3rem !important;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+}
+
+th {
+    font-size: 1.5rem;  
+    color: orange;
+}
+
+
+.formInput {
+    border: 1px solid black!important;
+    width: 80% !important;
+    height: 3rem !important;
+    margin: 15px !important;
+
+}
+
+.formReviewLabel {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.formReviewEntry {
+    font-size: 1.5rem;
+    color: #0075ff;
+    margin-left: 50px;
+}
+
+.marginLeft50 {
+    margin-left: 50px;
+}
+
+
+.backColorOrange{
+    background: #fc6633 !important;
+}
+
+
+.buttonLogin {
+    background-color: #fc6633 !important;
+}
+
+.registrationform {
+    
+    padding: 40px;
+    margin-right: 280px;
+    margin-left: 280px;
+    background-color: white;
+}
+
+
+
+.centerFormContainer  {
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+
+.centerLoginContainer  {
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+
+
+.centerBox {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+

@@ -1,0 +1,51 @@
+export const videoData = [
+    {
+        id: 1,
+        title: "How to walk",
+        instructor: "Jon Smith",
+        overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tristique lectus, sit amet gravida urna. Nunc id lorem ut enim faucibus tincidunt. Maecenas varius sapien ut turpis mattis accumsan. Proin vehicula aliquet dui nec venenatis. Donec laoreet ex ut erat elementum, id dictum dolor lacinia. Nunc dapibus tortor ac tellus finibus, sit amet mattis purus tincidunt. Aliquam convallis venenatis quam, non consectetur sapien laoreet sed. Donec efficitur ipsum in velit ullamcorper suscipit. Nunc urna quam, tincidunt consectetur tortor a, accumsan sodales metus. Nulla aliquam, risus id laoreet vulputate, nibh arcu tempor dolor, et aliquam lorem justo sit amet nisl.",
+        price: 88.88,
+        group_limit: 200,
+        video_src: 'https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4',
+        thumbnail_src: 'https://soliloquywp.com/wp-content/uploads/2016/03/thumbnails_addon.png',
+        instructor_avatar: 'https://i.pinimg.com/474x/ee/19/5a/ee195a69bf404996e8b6030fb861e4ed.jpg'
+    },
+    {
+        id: 2,
+        title: "Playing on the playground",
+        instructor: "Oprah Ritprasert",
+        overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tristique lectus, sit amet gravida urna. Nunc id lorem ut enim faucibus tincidunt. Maecenas varius sapien ut turpis mattis accumsan. Proin vehicula aliquet dui nec venenatis. Donec laoreet ex ut erat elementum, id dictum dolor lacinia. Nunc dapibus tortor ac tellus finibus, sit amet mattis purus tincidunt. Aliquam convallis venenatis quam, non consectetur sapien laoreet sed. Donec efficitur ipsum in velit ullamcorper suscipit. Nunc urna quam, tincidunt consectetur tortor a, accumsan sodales metus. Nulla aliquam, risus id laoreet vulputate, nibh arcu tempor dolor, et aliquam lorem justo sit amet nisl.",
+        price: 200.88,
+        group_limit: 100,
+        video_src: 'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4',
+    },
+    {
+        id: 3,
+        title: "How to walk",
+        instructor: "Jon Smith",
+        overview: "Lorem ipsum dolor sit amet, et aliquam lorem justo sit amet nisl.",
+        price: 88.88,
+        group_limit: 200,
+        video_src: 'https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4',
+        thumbnail_src: 'https://soliloquywp.com/wp-content/uploads/2016/03/thumbnails_addon.png',
+        instructor_avatar: 'https://thumbs.dreamstime.com/b/young-man-profile-face-over-gray-background-79495081.jpg'
+    },
+    {
+        id: 4,
+        title: "How to walk",
+        instructor: "Jon Smith",
+        overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tristique lectus, sit amet gravida urna. Nunc id lorem ut enim faucibus tincidunt. Maecenas varius sapien ut turpis mattis accumsan. Proin vehicula aliquet dui nec venenatis. Donec laoreet ex ut erat elementum, id dictum dolor lacinia. Nunc dapibus tortor ac tellus finibus, sit amet mattis purus tincidunt. Aliquam convallis venenatis quam, non consectetur sapien laoreet sed. Donec efficitur ipsum in velit ullamcorper suscipit. Nunc urna quam, tincidunt consectetur tortor a, accumsan sodales metus. Nulla aliquam, risus id laoreet vulputate, nibh arcu tempor dolor, et aliquam lorem justo sit amet nisl.",
+        price: 88.88,
+        group_limit: 200,
+        video_src: 'https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4',
+    },
+    {
+        id: 5,
+        title: "How to walk",
+        instructor: "Jon Smith",
+        overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tristique lectus, sit amet gravida urna. Nunc id lorem ut enim faucibus tincidunt. Maecenas varius sapien ut turpis mattis accumsan. Proin vehicula aliquet dui nec venenatis. Donec laoreet ex ut erat elementum, id dictum dolor lacinia. Nunc dapibus tortor ac tellus finibus, sit amet mattis purus tincidunt. Aliquam convallis venenatis quam, non consectetur sapien laoreet sed. Donec efficitur ipsum in velit ullamcorper suscipit. Nunc urna quam, tincidunt consectetur tortor a, accumsan sodales metus. Nulla aliquam, risus id laoreet vulputate, nibh arcu tempor dolor, et aliquam lorem justo sit amet nisl.",
+        price: 88.88,
+        group_limit: 200,
+        video_src: 'https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4',
+    },
+];
