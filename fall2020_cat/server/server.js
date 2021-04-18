@@ -96,7 +96,7 @@ app.use("/api/auth/userinfo", require("./routes/userinfo-routes"));
 
 //home route
 app.get('/', (req, res) => {
-    res.send('This is the home page');
+    res.send('<html><h1>This is the home page</h2></html>');
 });
 
 //handle for 404 - Resource Not Found
