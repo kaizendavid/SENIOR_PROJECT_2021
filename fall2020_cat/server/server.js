@@ -18,13 +18,15 @@ const app = express();
 
 //MIDDLEWARE
 app.use(express.json());
-/*//Middleware to check to see if the user has been logged in and has a session
+/*
+
+//Middleware to check to see if the user has been logged in and has a session
 const checkSessionExists = (req, res, next) => {
     if(req.session.userSession){
         console.log("you have a session set");
 
         next();
-        
+
     }else{
 
         return res.status(400).send({
@@ -33,6 +35,7 @@ const checkSessionExists = (req, res, next) => {
         });
     }
 }
+
 */
 
 //test-app.use((req, res, next) => {
