@@ -297,29 +297,29 @@ const MyProfile = () => {
                         </tr>
                         <tr>
                             <td>
-                                <label className="spanLabel">FIRST NAME</label>
+                                <label style={{backgroundColor: "green"}} className="spanLabel">FIRST NAME</label>
                             </td>
                             <td>
                                 <input type="text" id="firstName" placeholder="xxxxx" 
-                                    value={firstName} onChange={(Event) => setFirstName(Event.target.value)} />
+                                    value={firstName} readOnly />
                             </td>
                         </tr>
                         <tr>
                             <td >
-                                <label className="spanLabel">MIDDLE NAME</label>
+                                <label style={{backgroundColor: "green"}} className="spanLabel">MIDDLE NAME</label>
                             </td>
                             <td>
                                 <input type="text" id="middleName" placeholder="xxxxx" 
-                                    value={middleName} onChange={(Event) => setMiddleName(Event.target.value)} />
+                                    value={middleName} readOnly />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label className="spanLabel">LAST NAME</label>
+                                <label style={{backgroundColor: "green"}} className="spanLabel">LAST NAME</label>
                             </td>
                             <td>
                                 <input type="text" id="lastName" placeholder="xxxxx" 
-                                    value={lastName} onChange={(Event) => setLastName(Event.target.value)} />
+                                    value={lastName} readOnly />
                             </td>
                         </tr>
                         <tr>
@@ -434,7 +434,7 @@ const MyProfile = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <label className="spanLabel">LICENSE NUMBER</label>
+                                    <label style={{backgroundColor: "green"}} className="spanLabel">LICENSE NUMBER</label>
                                 </td>
                                 <td>
                                     <input type="text" id="licenseIdNumber" placeholder="xxxxx" 
