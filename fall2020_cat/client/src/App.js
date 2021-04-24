@@ -13,6 +13,7 @@ import AddContent from "./components/AddContent/AddContent";
 import ContactUs from "./components/contactus/ContactUs";
 import TrainingVideos from './components/trainingvideos/TrainingVideos';
 import TrainingVideoView from './components/trainingvideoview/TrainingVideoView';
+import AboutUs from './components/aboutUs/AboutUs';
 
 
 import ForgotPassword from './components/auth/ForgotPassword';
@@ -52,6 +53,7 @@ const App = () => {
             <Route exact path="/" component={Landing} />
             <Route exact path='/traininginfo' component={TrainingVideos} />
             <Route exact path='/traininginfo/:trainingVideoId' component={TrainingVideoView} />
+            <Route exact path='/AboutUs' component={AboutUs} />
 
             <Route exact path="/contactus" component={ContactUs} />
             <Route exact path="/login" component={Login} /> 

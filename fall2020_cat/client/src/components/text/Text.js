@@ -58,7 +58,7 @@ if(props.courseContent !=null)
                             <br/>
                             <br/>
 
-                            {loadImages.current && <p><img src={props.courseContent.images[0].image}/></p>}
+                            {loadImages.current && <p><img className="textImage" src={props.courseContent.images[0].image}/></p>}
 
                             <h2>{props.courseContent.subtext1}</h2>
 

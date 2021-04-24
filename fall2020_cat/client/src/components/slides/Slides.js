@@ -48,7 +48,7 @@ const Slides = (props) => {
 
                         <br/>
 
-                        {loadSlides.current && <p><img src={props.courseContent.slides[0].image}/></p>}
+                        {loadSlides.current && <p><img className="slidesImage" src={props.courseContent.slides[0].image}/></p>}
 
                         <br/>
                         <br/>

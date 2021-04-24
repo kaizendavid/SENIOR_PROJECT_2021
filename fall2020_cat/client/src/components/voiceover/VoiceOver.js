@@ -59,7 +59,7 @@ const VoiceOver = (props) => {
 
                         <br/>
 
-                        {loadImages.current && <p><img src={props.courseContent.images[0].image}/></p>}
+                        {loadImages.current && <p><img className="voiceImage" src={props.courseContent.images[0].image}/></p>}
 
                         <br/>
 

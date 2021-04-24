@@ -2,6 +2,8 @@ import './auth.css';
 import { useState, useEffect, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { useAuth } from '../../context/AuthProvider';
+import axios from 'axios';
+import { loginUser } from '../../services/authService';
 
 //Any comment code with $* in front is JWT code that is now removed or replaced with express-sessions
 //$*import axios from 'axios'; now using AuthProvider that uses authService to do axios calls
@@ -29,9 +31,7 @@ const LoginScreen = () => {
 
 
     //import the Global Context state variables and methods
-    const{ loginStatus, setUserData, setLastLesson, setModulesCompleted} = useAuth();//useContext(GlobalContext);
-
-    const { userState, logIn } = useAuth();
+    const{ loginStatus, logIn, userState, setUserData, setLastLesson, setModulesCompleted} = useAuth();//useContext(GlobalContext);
 
     const history = useHistory();
 
@@ -65,7 +65,7 @@ const LoginScreen = () => {
         //try to send register data to node server via Axios
         try {      
 
-            const authProviderResponse = await logIn({email, password});
+            const authProviderResponse = await axios.post("/api/auth/login", {email, password});
             
             //used for tests
             //console.log("Login response: " + authProviderResponse);
@@ -89,6 +89,9 @@ const LoginScreen = () => {
 
             //if the user has successfully logged in then set global state variables in AuthProvider context
             if(authProviderResponse.data.success){
+
+                logIn(authProviderResponse.data.email, authProviderResponse.data.role);
+
                 setUserData({
                     firstname: authProviderResponse.data.firstName, 
                     lastname: authProviderResponse.data.lastName, 
@@ -125,13 +128,13 @@ const LoginScreen = () => {
             //show error message on the form page below
             //setErrorMessage(error.response.data.error);
             console.log(error);
-            setErrorMessage("Error occurred, user password or email didn't match");
+            setErrorMessage("Server 500 Error: " + error);
             //Set the error message to empty in 5 sec
             setTimeout(() => {
                 setErrorMessage("");
                 setIsProcessing(false);
             },
-            5000);
+            20000);
         }
 
     }//registerHandler
@@ -145,7 +148,15 @@ const LoginScreen = () => {
         <div className='login-grid-layout backColorOrange' >
 
             <div className="centerLoginContainer">
-                
+
+            {errorMessage && 
+                <div>
+                    <p style={{textAlign: "center", }}><span style={{fontWeight: "bold", fontSize: "17px", color: "red"}}>{errorMessage} </span></p>
+                <   br/>
+                </div>
+            }
+
+                    
                 <div className="centerBox">
 
                     <form onSubmit={loginHandler}>
@@ -175,10 +186,7 @@ const LoginScreen = () => {
                             </div>
                         </div>
                 
-
-                        
-                        {errorMessage && <p style={{textAlign: "center", }}><span style={{fontWeight: "bold", fontSize: "17px", color: "red"}}>{errorMessage} </span></p>}
-                        <span className='smaller-text' style={{color: 'red'}}></span> 
+  
                         <center>
                         <p><Link style={{textDecoration: "none", color: "black", fontSize: "17px"}} to="/register">Don't have an account? Register</Link></p>
 

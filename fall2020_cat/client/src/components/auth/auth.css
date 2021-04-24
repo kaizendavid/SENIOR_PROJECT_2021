@@ -77,16 +77,10 @@ th {
     background-color: #fc6633 !important;
 }
 
-.registrationform {
-    
-    padding: 40px;
-    margin-right: 280px;
-    margin-left: 280px;
-    background-color: white;
-}
 
 
 
+/*
 .centerFormContainer  {
     width: 700px;
     height: 100%;
@@ -98,11 +92,11 @@ th {
     padding-top: 50px;
 
 }
+*/
 
-
-.centerLoginContainer  {
-    width: 700px;
-    height: 100%;
+.centerRegistrationContainer  {
+    width: 800px;
+    height: auto;
     margin: 0 auto;
     background-color: white;
     display: flex;
@@ -112,7 +106,15 @@ th {
 
 }
 
+.centerLoginContainer  {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
 
+    padding-top: 50px;
+
+}
 
 .centerBox {
     width: 300px;

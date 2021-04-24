@@ -1,0 +1,16 @@
+.aboutus-grid-layout
+{
+    padding: 100px;
+}
+
+.aboutus-text
+{
+    backdrop-filter: blur(5px);
+}
+
+.paragraphtext
+{
+    font-weight: bold;
+    color: black;
+    backdrop-filter: blur(5px);
+}

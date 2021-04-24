@@ -414,11 +414,11 @@ web token and sent to the client user for authentication.
 */
 router.post('/login', async (req, res, next) => {
     //test-res.send('This is the login page route');
-
+    
     //destructure request body into variables email and password
     const {email, password} = req.body;
-
     console.log("server auth-routes /login email" + email);
+    
     //check to make sure the user entered an email or password
     if(!email || !password) {
         return res.status(401).json({
@@ -435,11 +435,12 @@ router.post('/login', async (req, res, next) => {
 
         //check if email exists
         const user = await User.findOne({email}).select("+password");
+
         if(!user){
            return res.status(404).json({
                 success: false,
                 error: "email not found"
-            })
+            });
         }
         //test-console.log(user);
 
@@ -483,7 +484,7 @@ router.post('/login', async (req, res, next) => {
         res.status(500).send({
             success: false,
             error: error
-        })
+        });
     }
 });
 

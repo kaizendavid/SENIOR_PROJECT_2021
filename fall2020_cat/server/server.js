@@ -115,7 +115,15 @@ app.use((req, res, next) => {
 //handle for 500 - Internal Server Error
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.sendFile(path.join(__dirname, './public/505.html'))
+
+    
+    //internal error happened with mongodb
+    res.status(500).send({
+        success: false,
+        message: "There was a 500 internal error - see response error for details",
+        error: error
+    });
+    //res.sendFile(path.join(__dirname, './public/505.html'))
 });
 
 

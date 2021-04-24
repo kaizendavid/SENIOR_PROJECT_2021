@@ -147,6 +147,10 @@ export const AuthProvider = ({ children }) =>{
 
 
     
+
+
+
+
     
     //FUNCTIONs used in the application to change Global state variables==========================
     const loginStatus = (status) => {
@@ -329,40 +333,17 @@ export const AuthProvider = ({ children }) =>{
 
 
     //functions to pass to children and manage authorization global state
-    const logIn = async ({email, password}) => {
-        console.log("AuthProvider logIn");
-        let loginAuthServiceResponse;
-
-        try {
-
-            loginAuthServiceResponse = await loginUser({email, password});
-
-            console.log("loginIn loginAuthServiceResponse: " + loginAuthServiceResponse);
-
-
-            if(loginAuthServiceResponse.data.email){
+    const logIn = async (email, role) => {
 
                 //set auth context user to logged in
                 dispatch({
                     type: 'LOGIN_USER',
                     payload: {
-                        email: loginAuthServiceResponse.data.email,
-                        role: loginAuthServiceResponse.data.role
+                        email: email,
+                        role: role
                     }
                 });
 
-                return loginAuthServiceResponse;
-            }
-
-        } catch (error) {
-
-            console.log(error);
-
-            console.log("AuthProvider credential loginIn problem - loginResponse Error: " + error);
-            return error;
-            
-        }
-        
 
       
     }

@@ -37,32 +37,6 @@ export const authenticateUser = async () => {
 
 
 
-//Used in the AuthProvider to login users from the login page
-export const loginUser = async ({email, password}) => {
-    
-    let loginServerResponse;
-
-    try {
-
-        console.log("authService loginUser try");
-         loginServerResponse = await axios.post("/api/auth/login", {email, password});
-        console.log('authService loginRes:', loginServerResponse);
-
-        return loginServerResponse; 
-
-    } catch (error) {
-
-        console.log("authService loginServerResponse Error: " + error.response.data.error);
-        console.log('There is no user with these credentials!');
-
-        return error;
-    }
-
-}
-
-
-
-
 //used in the AuthProvider to logout users
 export const logoutUser = async () => {
 
