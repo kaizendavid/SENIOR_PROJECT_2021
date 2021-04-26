@@ -1,7 +1,4 @@
-.aboutus-grid-layout
-{
-    padding: 100px;
-}
+
 
 .aboutus-text
 {
@@ -13,4 +10,20 @@
     font-weight: bold;
     color: black;
     backdrop-filter: blur(5px);
+}
+
+.darkGreybd {
+    background-color: darkgray;
+}
+
+.centerAboutUsContainer  {
+    width: 850px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    
+    display: block !important;
+
+    padding: 30px;
+
 }

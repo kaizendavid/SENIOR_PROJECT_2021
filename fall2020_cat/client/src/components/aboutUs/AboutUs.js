@@ -2,28 +2,29 @@ import './aboutUs.css'
 
 const AboutUs = () => {
     return(
-        <div className = 'aboutus-grid-layout'>
-            <div className = 'aboutus-text'>
-                <h2>Our Vision Of Tomorrow</h2>
-                <p className = 'paragraphtext'>
-                It is unfortunate we must take measures to prepare our 
-                employees to prevent workplace violence nowadays. Nonetheless,
-                this is an uncomfortable truth that we must face whether we
-                want to or not. Fortunately, employers using our software 
-                have a fighting chance to prevent workplace and protect 
-                their employees.We provide the California workforce in the
-                public and private sectors engaging, cutting-edge workplace
-                safety training software. To this end, we appeal to Human 
-                Resources managers, supervisors, compliance officers, and 
-                upper-level corporate decision makers responsible for keeping
-                their employees in compliance with Cal/OSHA laws to consider 
-                our training materials. Our software features individuals 
-                from a wide range of backgrounds and employment fields. 
-                Our software is user-friendly and sophisticated, serving 
-                the needs and interests of employees of all levels of 
-                technological capability.
-                </p>
+        <div className = 'grid-layout darkGreybd'>
+
+            <div className="centerAboutUsContainer">
+
+                <div className = 'aboutus-text'>
+
+
+                    <h2>Overview</h2>
+                    <p className = 'paragraphtext'>
+                    When a person commits an act of targeted violence at school, the act often involves significant 
+                    planning. Schools can support their community and help prevent acts of targeted violence by 
+                    establishing an “Assessment and Care Team,” also known as a “Behavioral Intervention Team” or 
+                    a “Threat Assessment Team.” This interface provides a condensed overview of a school Assessment 
+                    and Care Team. It outlines how a school or school district can form and operate an Assessment 
+                    and Care Team. The content is based on information published by the U.S. Secret Service National 
+                    Threat Assessment Center.
+
+
+                    </p>
+                </div>
+
             </div>
+
         </div>
     )
 }
