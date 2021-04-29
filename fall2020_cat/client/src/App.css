@@ -47,7 +47,6 @@ body {
   background-color: black;
   top: 0px;
   position: fixed;
-  z-index: 2;
 }
 
 
@@ -79,7 +78,6 @@ body {
   padding: .45rem;
   margin: 0 .25rem;
   text-decoration: none;
-  opacity: 1;
   font-size: larger;
 }
 
@@ -101,7 +99,6 @@ body {
   color: white;
   position: fixed;
   top: 70px;
-  z-index: 1;
 }
 
 /* rules for ul elements within navbar */
@@ -123,7 +120,6 @@ body {
   padding: .45rem;
   margin: 0 .25rem;
   text-decoration: none;
-  opacity: 0.9;
   font-size: larger;
 }
 
@@ -171,10 +167,6 @@ footer {
   padding: 50px;
 }
 
-/* assign these rules to all children of footer element */
-footer > * {
-  opacity: 0.9;
-}
 
 
 /*  BUTTON  */
@@ -191,7 +183,6 @@ footer > * {
   transition: opacity 0.2s ease-in;
   outline: none;
   text-decoration: none;
-  opacity: .82;
   border-radius: 2.5px;
 }
 
@@ -311,3 +302,4 @@ label {
   border-radius: 0px;
 }
 
+/* erased opacities and z values */
