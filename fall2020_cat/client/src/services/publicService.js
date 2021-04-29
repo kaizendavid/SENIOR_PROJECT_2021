@@ -18,11 +18,11 @@ export const sendContactUsEmail = async ({email, subject, message, config}) => {
 
         const serverResponse = await axios.post("/api/public/contactus", {email, subject, message, config});
 
-        return serverResponse.data
+        return serverResponse;
 
     }catch(error){
 
-        return error.response.data.error;
+        return error;
 
     }
 

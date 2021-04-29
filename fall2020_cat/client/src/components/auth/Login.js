@@ -151,7 +151,7 @@ const LoginScreen = () => {
 
             {errorMessage && 
                 <div>
-                    <p style={{textAlign: "center", }}><span style={{fontWeight: "bold", fontSize: "17px", color: "red"}}>{errorMessage} </span></p>
+                    <p style={{textAlign: "center", }}><span style={{fontWeight: "bold", fontSize: "25px", color: "red"}}>{errorMessage} </span></p>
                 <   br/>
                 </div>
             }

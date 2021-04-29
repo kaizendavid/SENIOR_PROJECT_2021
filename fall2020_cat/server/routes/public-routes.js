@@ -32,12 +32,14 @@ router.post('/contactus', async (req, res, next) => {
 
 
         //send the email with the html instructions above with sendEmail module
-        await contactUsEmail({
+        const sendGridResponse = await contactUsEmail({
             from: email,
             to: websiteEmail,
             subject: subject,
             text: emailMessage
         });
+
+        console.log("SendGrid response: " + sendGridResponse);
 
         //email was sent correct with 200 response
         res.status(200).send({
