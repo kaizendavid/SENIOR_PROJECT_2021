@@ -23,6 +23,8 @@ const Navbar = () => {
     // get user logged in state from auth context to aid in link building
     const { userState } = useAuth();
 
+
+
     useEffect(() => {
         setLinks([{name: 'Home', to: '/'}]);
 
@@ -31,6 +33,10 @@ const Navbar = () => {
         // so we also must use previous state in setState functions
         determineLinks()
     }, [location.pathname, userState.loggedIn]);
+
+
+
+
 
     const determineLinks = () => {
         if ( location.pathname === '/progress' || location.pathname === '/userdashboard' || location.pathname === '/presentor' )
@@ -87,7 +93,7 @@ const Navbar = () => {
             }
             else
             {
-                setTitle("Safety First ");
+                setTitle("Safety Always ");
                 
                 setLinks(prev => [...prev,         
                     {name: 'About Us', to: '/aboutus'},
