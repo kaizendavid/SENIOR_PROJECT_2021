@@ -55,7 +55,7 @@ const Landing = () => {
 		alignSelf: 'center'
     }
 
-	const background = '//images/Landing_Image.png'
+	const background = '/images/Landing_Image.png'
 	const img0 = '/images/careTeam.png';
 	const img1 = '/images/background_introduction.png';
 	const img2 = '/images/module2_3.png';
