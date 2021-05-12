@@ -62,7 +62,6 @@ router.post('/contactus', async (req, res, next) => {
         })
 
 
-        next(error);
     }
 
 });
