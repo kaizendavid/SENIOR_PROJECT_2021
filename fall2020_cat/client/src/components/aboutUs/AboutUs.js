@@ -6,11 +6,11 @@ const AboutUs = () => {
 
             <div className="centerAboutUsContainer">
 
-                <div className = 'aboutus-text'>
+                <div >
 
 
                     <h2>Overview</h2>
-                    <p className = 'paragraphtext'>
+                    <p className="aboutusText">
                     When a person commits an act of targeted violence at school, the act often involves significant 
                     planning. Schools can support their community and help prevent acts of targeted violence by 
                     establishing an “Assessment and Care Team,” also known as a “Behavioral Intervention Team” or 
@@ -24,6 +24,15 @@ const AboutUs = () => {
                 </div>
 
             </div>
+
+            <footer>
+				<div className="footerContent">
+					<h1>Contact Us</h1>
+					<h3>(888) 888-888</h3>
+					<h3>info@k12assessment.com</h3>
+				</div>
+				
+			</footer>
 
         </div>
     )

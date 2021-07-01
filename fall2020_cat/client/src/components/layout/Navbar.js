@@ -1,8 +1,10 @@
 
+import './Layout.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthProvider';
 //nnnnnimport { useTitle } from '../../context/TitleProvider'
 import React, { useState, useEffect } from 'react';
+
 
 
 
@@ -16,6 +18,8 @@ import React, { useState, useEffect } from 'react';
 const Navbar = () => {
     const [ links, setLinks ] = useState([{name: 'Home', to: '/'}]);
     const [ title, setTitle ] = useState('TITLE');
+
+    const [showMobileLinks, setShowMobileLinks] = useState(false);
 
     // on initial Navbar component load, determine what location we're at and set links accordingly
     const location = useLocation();
@@ -53,7 +57,7 @@ const Navbar = () => {
             }
             else
             {
-                setTitle("Userdashboard");
+                setTitle("User Dashboard");
 
                 setLinks(prev => [...prev, 
                     {name: 'My Profile', to:'/myprofile'},
@@ -86,9 +90,10 @@ const Navbar = () => {
 
                 setLinks(prev => [...prev,         
                     {name: 'About Us', to: '/aboutus'},
+                    {name: 'Contact', to: '/contactus'},
                     {name: 'My Profile', to:'/myprofile'},
-                    {name: 'My Dashboard', to:'/userdashboard'},
-                    {name: 'Contact', to: '/contactus'}
+                    {name: 'My Dashboard', to:'/userdashboard'}
+                    
                 ]);
             }
             else
@@ -111,12 +116,18 @@ const Navbar = () => {
 
 
     // go through our link state and create a button for each one
-    const showNavButtons = () => {
-        return links.map(btn => <li key={btn.to}><Link to={btn.to}>{btn.name}</Link></li>);
+    const showDesktopNavButtons = () => {
+        return links.map(lnk => <li key={lnk.to} ><Link to={lnk.to}>{lnk.name}</Link></li>);
+    }
+
+    const showMobileNavButtons = () => {
+        return links.map(lnk => <li key={lnk.to} ><Link to={lnk.to} onClick={() => showMobileNavbar()}>{lnk.name}</Link></li>);
     }
 
 
-
+    const showMobileNavbar = () => {
+        setShowMobileLinks(prev => !prev);
+    }
 
 
 
@@ -124,17 +135,35 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
+
             <div className='nav-title'>
-                
-                <span style={{float: "left!important", fontWeight: "bold", fontSize: "larger", opacity: "90%", color: "orange", marginRight: "20px"}} >
+                <span style={{float: "left !important", fontWeight: "bold", fontSize: "larger", opacity: "90%", color: "orange", marginRight: "20px"}} >
                     {title}
                 </span>
-                
             </div>
 
-            <ul>
-                {showNavButtons()}
-            </ul>
+            <div className="desktop" id="desktopNavbar">
+                <ul>
+                    {showDesktopNavButtons()}
+                </ul> 
+            </div>
+            
+
+
+            <div  className={ !showMobileLinks ? "mobileShow" : "mobileHide"} >
+               <a href="#" onClick={() => showMobileNavbar()}><img src="./threelines.svg" alt="image" width='40px'/></a> 
+            </div>
+            <div  className={ showMobileLinks ? "mobileShow" : "mobileHide"} >
+               <a href="#" onClick={() => showMobileNavbar()}><img src="./closetimes.svg" alt="image" width='40px'/></a> 
+            </div>
+
+
+            <div className={ showMobileLinks ? "sidebar_mobileResponsive mobileShow" : "mobileHide"}  >
+                <ul className="mobileLink">
+                    {showMobileNavButtons()}
+                </ul> 
+            </div>
+
         </nav>
     )
 }

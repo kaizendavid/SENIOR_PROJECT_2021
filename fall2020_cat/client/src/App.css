@@ -17,11 +17,11 @@ body {
 }
 
 /* GENERAL LAYOUT FOR WEBSITE 
-  profile bar
+  profile bar 70px
   -----------
-  nav bar
+  nav bar     70px
   -----------
-  content
+  content     auto
   -----------
 */
 .main-grid-layout {
@@ -83,7 +83,7 @@ body {
 
 /*change color for hover over elements*/
 .profile-bar a:hover {
-  color: rgb(127, 178, 245);
+  color: orange;
 }
 
 /*  NAVBAR  */
@@ -96,21 +96,15 @@ body {
   width: 100%;
   height: 70px;
   background: var(--dark-color);
+  border-bottom: 1px solid #20374e;
   color: white;
   position: fixed;
   top: 70px;
 }
 
 /* rules for ul elements within navbar */
-.navbar ul {
+.navbar  {
   grid-column: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.5rem 2rem;
-  height: 70px;
-  color: white;
-  list-style-type: none;
 
 }
 
@@ -125,39 +119,19 @@ body {
 
 /* change color on hover over anchor elements within navbar */
 .navbar a:hover {
-  color: rgb(127, 178, 245);
+  color: yellow;
 }
+
 
 /* HOME PAGE LAYOUT */
 .landing-grid-layout {
   display: grid;
   grid-row: 3 / 4;
-  grid-template-rows: 800px 600px 250px;
-}
-/* HOME PAGE LAYOUT */
-.landing-grid-layout {
-  display: grid;
-  grid-template-rows: auto auto 300px;
-}
-
-/* LANDING CONTENT*/
-.landing {
-  grid-row: 1 / 2;
-  background-color: white;
-  text-align: center;
 }
 
 
-/* SAMPLE/AD CONTENT PANES */
-.sample-pane {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  background-color: white;
-  display: grid;
-  margin: 50px 0px 50px 0px;
-}
+
+
 
 /* FOOTER/CONTACT US */
 footer {
@@ -165,6 +139,10 @@ footer {
   background-color: var(--primary-color);
   color: white;
   padding: 50px;
+}
+
+.footerContent {
+  margin-left: 200px;
 }
 
 
@@ -302,4 +280,19 @@ label {
   border-radius: 0px;
 }
 
-/* erased opacities and z values */
+/* mobile responsive CSS */
+
+
+
+
+
+@media only screen and (max-width: 978px){
+
+  .footerContent {
+    margin-left: 20px;
+  }
+  
+
+ 
+
+}

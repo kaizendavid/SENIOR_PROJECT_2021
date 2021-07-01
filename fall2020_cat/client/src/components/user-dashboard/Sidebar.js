@@ -12,34 +12,34 @@ const Sidebar = ({sideBarOpen, closeSidebar}) => {
 
 return(
 
-    <div className={sideBarOpen ? "sidebar_responsive" : "" } id="sidebar">
+        <div className={sideBarOpen ? "sidebar_responsive" : "" } id="sidebar">
 
-        <div className="navbar_icon" id="sidebarIcon" onClick={() => closeSidebar()}>
-            <img src="./closetimes.svg" alt="image" width='40px'/>
-        </div>
-
-
-        <div className="sidebar__menu">
-            <div className="sidebar__link active_menu_link">
-                <a href='#'>Profile</a>
+            <div className="navbar_icon" id="sidebarIcon" onClick={() => closeSidebar()}>
+                <img src="./closetimes.svg" alt="image" width='40px'/>
             </div>
-        </div>
 
-        <div className="sidebar__menu">
-            <div className="sidebar__link">
-                <a href='#'>Statistics</a>
+
+            <div className="sidebar__menu">
+                <div className="sidebar__link active_menu_link">
+                    <a href='#'>Profile</a>
+                </div>
             </div>
-        </div>
 
-        <div className="sidebar__menu">
-            <div className="sidebar__link">
-                <a href='#'>Certificate</a>
+            <div className="sidebar__menu">
+                <div className="sidebar__link">
+                    <a href='#'>Statistics</a>
+                </div>
             </div>
+
+            <div className="sidebar__menu">
+                <div className="sidebar__link">
+                    <a href='#'>Certificate</a>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-
-);
+    );
 
 }
 

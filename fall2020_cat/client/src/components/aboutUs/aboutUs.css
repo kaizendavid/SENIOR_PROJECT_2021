@@ -5,11 +5,10 @@
     backdrop-filter: blur(5px);
 }
 
-.paragraphtext
+.aboutusText
 {
     font-weight: bold;
     color: black;
-    backdrop-filter: blur(5px);
 }
 
 .darkGreybd {
@@ -26,4 +25,14 @@
 
     padding: 30px;
 
+}
+
+
+
+@media only screen and (max-width: 978px){
+    .centerAboutUsContainer {
+        width: 100%;
+        height: 70%;
+        
+    }
 }

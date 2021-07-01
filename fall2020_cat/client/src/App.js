@@ -49,25 +49,29 @@ const App = () => {
         <div className='main-grid-layout'>
           <ProfileBar />
           <Navbar />
+
+
+          
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path='/traininginfo' component={TrainingVideos} />
             <Route exact path='/traininginfo/:trainingVideoId' component={TrainingVideoView} />
-            <Route exact path='/AboutUs' component={AboutUs} />
+            <Route exact path='/aboutUs' component={AboutUs} />
 
             <Route exact path="/contactus" component={ContactUs} />
             <Route exact path="/login" component={Login} /> 
             <Route exact path="/forgotpassword" component={ForgotPassword} />
             <Route exact path="/resetpassword/:resetToken" component={ResetPassword} />
-            <Route exact path="/hometestpage" component={HomeTestpage} /> {/**This route is used for testing can be removed */}
-            <Route exact path="/assessment" component={Assessment} />
-            
-            <PrivateRoute exact path="/privatescreen" component={PrivateScreen} redirLink='/' />
+
             <PrivateRoute exact path="/userdashboard" component={Userdashboard} />
-            <PrivateRoute exact path="/presentor" component={Presentor} />
-            <PrivateRoute exact path="/finishedmodule" component={FinishedModule} />
             <PrivateRoute exact path="/myprofile" component={MyProfile} />
             <PrivateRoute exact path="/adminusers" component={AdminUsers} />
+
+            {//<Route exact path="/assessment" component={Assessment} />
+            }
+            <PrivateRoute exact path="/presentor" component={Presentor} />
+            <PrivateRoute exact path="/finishedmodule" component={FinishedModule} />
+
 
             <Elements stripe={ stripePromise} >
               <Route exact path="/register" component={Register} />
@@ -76,6 +80,8 @@ const App = () => {
             {/**These route is were never implemented */}
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/addcontent" component={AddContent} />
+            <Route exact path="/hometestpage" component={HomeTestpage} /> {/**This route is used for testing can be removed */}
+            <PrivateRoute exact path="/privatescreen" component={PrivateScreen} redirLink='/' />
 
             <Route component={PageNotFound}/>
 

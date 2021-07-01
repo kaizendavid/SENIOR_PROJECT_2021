@@ -59,13 +59,16 @@ const Userdashboard = () => {
         console.log(false);
     }
 
-    //$*<UserDashNavbar sideBarOpen={sidebarOpen} openSidebar={openSidebar}/>
-            
-    //$*<Sidebar sideBarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
 
     return(  
 
         <div className="dashContainer">
+
+
+            <UserDashNavbar sideBarOpen={sidebarOpen} openSidebar={openSidebar}/>
+            
+            <Sidebar sideBarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
+        
        
             <UserDashMain loginStatus={loggedIn} lastLesson={lastLesson} modulesCompleted={modulesCompleted}/>
 

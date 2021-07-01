@@ -1,0 +1,171 @@
+
+/* Landing.js CSS */
+.landingH2 {
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 25px;
+}
+
+.coverPhoto {
+  height: 700px;
+}
+
+.slideStyle {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  margin-top: 50px;
+  
+}
+
+.arrowsDiv {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+  justify-content: center;
+}
+
+.arrow  {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 125px;
+  padding-right: 125px;
+  width: 400px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.arrowStroke {
+    fill: #fc6633;
+    stroke: #fc6633; 
+    stroke-width: 20px;
+}
+
+
+
+.desktop a:hover {
+    color: yellow;
+  }
+
+
+.mobile a:hover {
+    color: crimson;
+  }
+
+.desktop ul {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  height: 70px;
+  color: white;
+  list-style-type: none;
+}
+
+
+.sidebar_mobileResponsive li:hover {
+  background-color: darkgoldenrod;
+}
+
+
+.mobileShow {
+  display: none;
+}
+
+.mobileHide {
+  display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 978px){
+
+  #desktopNavbar {
+    display: none;
+  }
+
+  .mobileShow {
+    display: block;
+  }
+
+  .mobileMenu {
+    
+    text-align: center;
+  }
+  .moblieMenu ul {
+    display: block;
+    
+  }
+
+  .sidebar_mobileResponsive {
+    text-align: center;
+    display: block !important;
+    z-index: 9999 !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 70px !important;
+    width: 100%;
+    font-size: 3 rem !important;
+  }
+
+  .sidebar_mobileResponsive ul li {
+    display: block;
+    background-color: #105e7a;
+    border-bottom: 1px solid #20374e;
+    padding: 10px;
+    
+    
+  }
+
+
+  
+  .landing-grid-layout {
+    display: block;
+  }
+
+  .landingH2 {
+    font-weight: bold;
+    font-size: 200%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .coverPhoto {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+
+  }
+
+  .slideStyle {
+    display: block;
+    width: 90%;
+    height: auto;
+    background-size: contain;
+
+  }
+
+  .arrowsDiv {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .arrow  {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 200px;
+    height: 150px;
+  }
+}
+
+
+
+

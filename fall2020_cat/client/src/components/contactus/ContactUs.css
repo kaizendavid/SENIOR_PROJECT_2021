@@ -1,16 +1,19 @@
-
+.contactFooter {
+    width: 100%;
+    grid-area: footer;
+    background-color: #105E7A;
+}
 
 .contactContainer{
    
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr ;
-    grid-template-rows: 140px auto;
+    grid-template-rows: 140px 0.8fr 0.1fr;
     grid-template-areas: 
         
         "usernav    usernav     usernav "
-        "lside       dashmain    rside" ;
-
-
+        "lside       dashmain    rside" 
+        "footer     footer      footer";
 }
 
 .contactForm{
@@ -21,8 +24,6 @@
 .backColorOrange{
     background: #fc6633 !important;
 }
-
-
 
 .leftSide {
     grid-area: lside;
@@ -36,11 +37,46 @@
 
 .contactFormInput {
     border: 1px solid black!important;
-
-
 }
 
 .contactusTextarea {
     width: 80% !important;
     margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 978px){
+
+
+    .contactContainer{
+
+        background-color:  #fc6633;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 0.8fr 0.2fr;
+        grid-template-areas: 
+            
+            "usernav "
+            "dashmain" 
+            "footer";
+    }
+
+    .contactFormInput {
+        border: 1px solid black!important;
+        width: 90% !important;
+    }
+    
+    .contactusTextarea {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .contactFooter{
+        background-color: #fc6633;
+    }
+    
+
 }

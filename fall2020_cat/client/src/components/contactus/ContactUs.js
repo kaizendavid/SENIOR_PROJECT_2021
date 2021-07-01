@@ -62,15 +62,11 @@ const ContactUs = () => {
 
 
         } catch (error) {
-
             console.log(error);
             
             setIsProcessing(false);
             //show error in the form
             setErrorMessage(error.response.data.error);
-            
-            
-
         }
 
     }
@@ -79,7 +75,7 @@ const ContactUs = () => {
 
     return(
         
-        <div className="contactContainer" stye={{background: "yellow"}}>
+        <div className="contactContainer" >
 
             <div className="leftSide"></div>
             <div className="rightSide"></div>
@@ -139,6 +135,15 @@ const ContactUs = () => {
 
                 
             </div>
+
+            <footer className="contactFooter" >
+				<div className="footerContent">
+					<h1>Contact Us</h1>
+					<h3>(888) 888-888</h3>
+					<h3>info@k12assessment.com</h3>
+				</div>
+				
+			</footer>
 
         </div>
 

@@ -1,3 +1,4 @@
+import './Layout.css';
 import { useContext, useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { useAuth } from '../../context/AuthProvider';

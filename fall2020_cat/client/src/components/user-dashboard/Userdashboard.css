@@ -49,13 +49,6 @@ UserDashNav.js CSS ===========================================
 
 }
 
-.navbar_icon{
-    display: none;
-}
-.navbar_icon > i {
-    font-size: 3rem;
-    color:darkgoldenrod;
-}
 
 .navbar__left > a {
     margin-right: 30px;
@@ -81,6 +74,15 @@ UserDashNav.js CSS ===========================================
     text-decoration: none;
 }
 
+    
+
+.navbar_icon{
+    display: none;
+}
+.navbar_icon > i {
+    font-size: 3rem;
+    color:darkgoldenrod;
+}
 
 
 

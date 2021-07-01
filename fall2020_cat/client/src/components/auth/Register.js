@@ -27,7 +27,7 @@ const RegisterScreen = ( ) => {
     //account type and total to purchase
     const [accountType, setAccountType] = useState("self");
     const [licensetotal, setLicenseTotal] = useState(1);
-    const [billingAmount, setBillingAmount] = useState(150);
+    const [billingAmount, setBillingAmount] = useState(0);
 
     const [firstName, setFirstName] = useState("");
     const [middleName, setMiddleName] = useState("");
@@ -69,6 +69,9 @@ const RegisterScreen = ( ) => {
     const [showCreditCard, setShowCreditCard] = useState(false);
     const [isProcessing, setIsProcessing] = useState(false);
 
+    const [singleUserRole, setSingleUserRole] = useState(true);
+    const [isDefaultAdmin, setIsDefaultAdmin] = useState(false);
+
     //used to display which type of payment method the user will use. Redemption license code or credit card
     const displayLicenseCodeInputs = () => {
         //no credit card because using a license code
@@ -94,15 +97,42 @@ const RegisterScreen = ( ) => {
 
     //calcultate the total price for the course licenses to purchase
     const setLicenseTotalandCalculateBill = Event =>{
+        if(Event >= 2){
+            setRole("admin");
+            setIsDefaultAdmin(true);
+        }else{
+            setIsDefaultAdmin(false);
+            setRole("user");
+        }
         setLicenseTotal(Event);
-        let billTotal = Event*150;
+        let billTotal = Event*0;
         setBillingAmount(billTotal);
     }
 
     //handler function to set account type in the select dropdown menu
     const selectAccountHandler = Event => {
-        setAccountType(Event);
-        //test-console.log(Event);
+        console.log("selectAccountHandler:" + Event);
+        if(Event == 'self'){
+            setIsDefaultAdmin(false);
+            setLicenseTotal(1);
+            setRole("user");
+            setSingleUserRole(true);
+            setIsSinglePerson(true);
+            setAccountType(Event);
+        }else{
+            setSingleUserRole(false);
+            setIsSinglePerson(false);
+            setAccountType(Event);
+
+            setOrgName("");
+            setOrgAddress("");
+            setOrgCity("");
+            setOrgStates("");
+            setOrgZipcode("");
+            setOrgPhone("");
+        }
+        
+        console.log("singleUserRole: " + singleUserRole);
     }
     //handler function to set gender in the select dropdown menu
     const selectGenderHandler = Event => {
@@ -128,6 +158,7 @@ const RegisterScreen = ( ) => {
         setOrgPhone("");
 
     }
+
 
     const { userState, login } = useAuth();
 
@@ -673,6 +704,10 @@ const RegisterScreen = ( ) => {
                     <br/>
                     <br/>
 
+                    <div style={{padding: "20px"}}>
+                    <h4 style={{color: "orange", fontSize: "20px"}}>If you have a company license code number from your organization then you will register as a single user for access</h4>
+                    </div>
+
                     <div className='form-group'>
                         
                         <label htmlFor="accountType">Choose Account Type: </label>
@@ -688,7 +723,17 @@ const RegisterScreen = ( ) => {
                         </select>
                     </div>
 
-                    <div className='form-group'>
+                    <div style={{display: singleUserRole ? "block" : "none"}}>
+                        <label htmlFor="singleUser">Single User License</label>
+                        <input value="1" readOnly />
+                    </div>
+
+                    <div style={{display: singleUserRole ? "block" : "none"}}>
+                        <label htmlFor="singleRole">Role</label>
+                        <input value="user" readOnly />
+                    </div>
+
+                    <div className='form-group' style={{display: singleUserRole ? "none" : "block"}}>
                         <label htmlFor="licensetotal">Number of Licenses:</label>
                         <input 
                             type="number" 
@@ -699,8 +744,12 @@ const RegisterScreen = ( ) => {
                         />        
                     </div>
 
-                    <div className='form-group'>
-                        
+                    <div style={{display: isDefaultAdmin ? "block" : "none"}}>
+                        <label htmlFor="defaultRole" >Default Role</label>
+                        <input value="admin" readOnly />                       
+                    </div>
+
+                    <div className='form-group' style={{display: singleUserRole ? "none" : (isDefaultAdmin ? "none" : "block")   }}>
                         <label htmlFor="role">Your Role: </label>
 
                         <select required name="role" id="role" placeholder="user" onChange={(Event) => selectRoleHandler(Event.target.value)} >
@@ -715,17 +764,15 @@ const RegisterScreen = ( ) => {
                     <br/>
                     <br/>
 
+
+                    <div style={{display: singleUserRole ? "none" : "block"}}>
+
+                    
                     <center>
-
-                    <h1 className='large'>Organization Information</h1>
-                    
-
-                    <br/>
-
-                    <h4 style={{color: "orange", fontSize: "20px"}}>If you are registering a single license for yourself please check the box</h4>
-                    
+                        <h1 className='large'>Organization Information</h1>
                     </center>
                     
+{/*
                     <input 
                         type="checkbox" 
                         id="self" 
@@ -733,6 +780,8 @@ const RegisterScreen = ( ) => {
                         value='true' 
                         onClick={(value) => toggleTextboxDisabled(value)}
                     />
+*/
+}                 
                     <br/>
 
                     <div className='form-group'>  
@@ -812,14 +861,17 @@ const RegisterScreen = ( ) => {
                             onChange={(Event) => setOrgPhone(Event.target.value)} 
                         />
                     </div>
-                    
-                    <div className='form-group'>
-                        <br/>
 
+                    </div>
+
+
+                    <br/>
+
+
+                    <div className='form-group'>
                         <div className='button-holder'>
                             <button onClick={() => setVisiblity(true)} type="button" className="form-button"><h2>Review</h2></button>
                         </div>
-                    
                     </div>
 
                     {/**This following JSX code is used to show and confirm the user register information so
@@ -832,9 +884,14 @@ const RegisterScreen = ( ) => {
 
                         <br/>
                         <br/>
+                        
                         <hr/>
 
-                        <h2>Review Registration Information</h2>
+                        <br/>
+
+                        <center>
+                            <h2>Review Registration Information</h2>
+                        </center>
 
                         <div style={{margin: 10}}>
                             <table>
